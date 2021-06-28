@@ -1,0 +1,265 @@
+/*Обнуление*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus, :active {outline: none;}
+a:focus, a:active {outline: none;}
+nav, footer, header, aside {display: block;}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+input, button, textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a, a:visited {text-decoration: none;}
+a:hover {text-decoration: none;}
+ul li {list-style: none;}
+img {vertical-align: top;}
+h1, h2, h3, h4, h5, h6 {font-size: inherit; font-weight: 400;}
+
+/*------------------------------------------------------------*/
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #445162;
+}
+.container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  padding: 50px 0;
+  justify-content: space-between;
+}
+.header-hi {
+  color: #fff
+}
+.header-hi__title h1 {
+  font-size: 60px;
+  font-weight: 400;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+  margin: 0 0 40px 0;
+}
+.header-hi__list li {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 400;
+  text-shadow: 0px 1px 0px rgba(0,0,0,0.3);
+  background: url('../img/check.png') left no-repeat;
+  padding: 0 0 0 35px;
+}
+
+
+.header-img img {
+  max-width: 100%;
+}
+
+/*-----------------------------------------------*/
+
+.what {
+  padding: 50px 0 25px 0;
+}
+
+.what-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+.what-img {
+  width: 100%;
+}
+
+
+.title {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 400;
+  color: #445161;
+}
+
+.what-term__text{
+  padding: 36px 0 0 0;
+}
+
+.what-term__text p {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+  margin: 0 0 15px 0;
+}
+
+.what-term__text p:last-child {
+  margin: 0;
+}
+
+/*----------------------------------------------*/
+
+.cards {
+  background-color: #f5f5f5;
+  padding: 50px 0 30px 0;
+}
+
+.cards-title {
+  text-align: center;
+  padding: 0 0 30px 0;
+}
+
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -8px;
+}
+
+.card-item {
+  display: flex;
+  flex: 1 1 50%;
+  padding: 0 8px;
+  margin: 0 0 30px 0;
+}
+
+.card-item__image {
+  flex: 0 0 200px;
+}
+
+.card-item__about {
+  padding: 0 0 0 15px;
+}
+
+.card-item__title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #445161;
+  padding: 0 0 15px 0;
+}
+
+.card-item__text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #333333;
+}
+
+/*-------------------------------------------*/
+
+.subscribe {
+  padding: 50px 0;
+}
+
+.subscribe-title {
+  margin: 0 0 30px 0;
+  text-align: center;
+}
+
+.subscribe-body {
+  max-width: 990px;
+  margin: 0 auto;
+}
+
+.subscribe-raw {
+  display: flex;
+  margin: 0 -22.5px;
+}
+
+.subscribe-cardholder {
+  flex: 0 1 33.333%;
+  padding: 0 22.5px;
+  display: flex;
+}
+
+.subscribe-card {
+  background-color: #445162;
+  border: 1px solid #445162;
+  border-radius: 5px;
+  padding: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.subscribe-card__title {
+  font-size: 24px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 18px 0 12px 0;
+  text-align: center;
+}
+
+.subscribe-card__subtitle {
+  font-size: 40px;
+  font-weight: 400;
+  color: #445162;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0 20px 0;
+}
+
+.subscribe-card__text {
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 400;
+  color: #ffffff;
+  padding: 20px;
+  flex: 1 1 auto;
+}
+
+.subscribe-card__text p {
+  margin: 0 0 15px 0;
+}
+
+.subscribe-card__text p:last-child {
+  margin: 0;
+}
+
+.subscribe-card__button {
+  font-size: 18px;
+  display: block;
+  line-height: 40px;
+  font-weight: 700;
+  color: #445161;
+  background-color: #fff;
+  text-align: center;
+  height: 40px;
+  margin: 0 20px;
+  border-radius: 4px;
+}
+
+/*---------------------------*/
+
+footer {
+  background-color: #f5f5f5;
+}
+
+.footer-holder {
+  text-align: center;
+  font-size: 12px;
+  line-height: 24px;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+  color: #445162;
+  padding: 30px 0 23px 0;
+}
